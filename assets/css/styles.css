@@ -1,0 +1,57 @@
+:root{
+    --color1:#4489c7;
+    --color2:#fff;
+    --color3:#040a32;
+    --color4:#2d618e;
+    --color5:#ff003d;
+    --color6:#70b66d;
+    --color7:#000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--color3);
+
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--color1);
+    border-radius: 10px;
+}
+.detalles-juego{
+    color: var(--color2) ;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.tablero{
+    width: 100%;
+    height: 100%;
+    background: var(--color4) ;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.tablero .comida{
+    background: var(--color5);
+    border-radius: 10px;
+
+}
+.tablero .cabeza{
+    background: var(--color6);
+    
+}
